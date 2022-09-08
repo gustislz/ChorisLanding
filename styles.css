@@ -13,72 +13,66 @@ body{
 
 .header {
   
-    height: 80px;
+  height: 80px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 5px 15px;
-  box-shadow: rgb(39, 4, 4) 0px 8px 24px;
+  padding: 0px 50px;
+  box-shadow: rgb(0, 0, 0) 0px 1px 10px;
   position: fixed;
   top: 0;
-  background-color: #EFE7E7;
+  background-color: #8a0303a6;
   z-index: 1;
 }
 
 .header img {
-  
-  height: 92%;
+  height: 108%;
 }
 
 .navbar ul {
-  
   display: flex;
   list-style: none;
   gap: 100px;
 }
 
 .navbar {
-  
   display: flex;
 }
 
 .navbar i {
-  
   font-size: 40px;
   display: none;
 }
 
 #toggle-menu {
-  
   display: none;
 }
 
 
 .navbar-link {
-  
   text-decoration: none;
   color: black;
-  font-weight: 300;
+  font-weight: 600;
 }
 
+/*main*/
 main {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
+/*hero*/
 #hero {
-  
-    margin-left: 7%;
+  margin-left: ;
   text-align: ;
   margin-top: 80px;
   display: flex;
   padding: 70px 0px;
   width: 90%;
-  justify-content:space-around;
+  justify-content: space-between;
 }
 
 .hero-presentation {
@@ -91,7 +85,6 @@ main {
 }
 
 .hero-presentation h1 {
-  
   font-weight: 700;
   font-size: 40px;
   display: flex;
@@ -136,7 +129,6 @@ main {
 
 /*ABOUT*/
 #about {
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -260,7 +252,7 @@ bottom  overflow: hidden;
 
   @media (max-width:576px) {
     .navbar ul {
-      background-color: rgb(205, 218, 218);
+      background-color: rgb(83, 41, 41);
       width: 100%;
       height: calc(100vh - 80px);
       position: absolute;
@@ -270,18 +262,18 @@ bottom  overflow: hidden;
       align-items: center;
       justify-content: center;
       transform: translateX(200%);
-      transition: all 05s ease-out;
+      transition: all 0.3s ease-out;
     }
 
     .navbar i {
       display: block
     }
-
-    #toggle-menu:checked ~.navbar-list {
+    
+    #toggle-menu:checked + .navbar-list {
       transform: translateX(0%);
-      transition: all 0.4 ease-in;
+      transition: all 0.3 ease-in;
     }
-
+    
     .hero-presentation p {
       max-width: 100%;
     }
